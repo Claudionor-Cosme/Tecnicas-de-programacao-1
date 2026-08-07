@@ -1,0 +1,16 @@
+.banner{
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+}
+
+.banner img{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.banner p{
+    text-align: center;
+}
