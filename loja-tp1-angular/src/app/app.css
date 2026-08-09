@@ -1,0 +1,16 @@
+.container{
+    color: #000;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+h2{
+    color: #ffff;
+     background: linear-gradient(90deg,
+                rgb(199, 193, 193) 0%,
+                rgba(50, 160, 65, 1) 50%,
+                rgb(199, 193, 193) 100%
+                );
+}
