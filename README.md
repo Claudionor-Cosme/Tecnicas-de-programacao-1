@@ -24,3 +24,6 @@ O repositório tem caráter acadêmico e reúne anotações, exercícios, ativid
 ###Aula 02
 - Standalone Components
 - Criação e estrutura de componentes
+
+###Aula 03
+- Componenetes, templates e Data Binding com Signals
