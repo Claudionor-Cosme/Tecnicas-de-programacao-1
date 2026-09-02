@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, Pipe, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './core/header/header';
 import {Footer} from "./core/footer/footer"
@@ -6,6 +6,9 @@ import { QuantidadeControle } from './shared/quantidade-controle/quantidade-cont
 import { Produto } from './model/produto';
 import { CardProduto } from "./features/produtos/card-produto/card-produto";
 import { ListaProdutos } from "./features/produtos/lista-produtos/lista-produtos";
+import { pipe } from 'rxjs';
+import { DescontoPipe } from './shared/pipes/desconto-pipe';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +19,10 @@ import { ListaProdutos } from "./features/produtos/lista-produtos/lista-produtos
 export class App {
   protected readonly title = signal('loja TP1 APP');
   sobre?: string;
+
+  x = signal(10);
+
+  
 
  
 
