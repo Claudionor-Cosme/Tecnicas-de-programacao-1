@@ -1,10 +1,11 @@
 <app-header [titulo]="title()" (textoSobre)="receberSobre($event)"></app-header>
 <main class="container">
-  
-  <app-lista-produtos></app-lista-produtos>
+  <router-outlet></router-outlet>
+
+
+  <!--<app-lista-produtos></app-lista-produtos>
   <!-- <h2>Angular - aula 02</h2> -->
-
-
-  <p>{{sobre}}</p>
+   
+  <<p>{{sobre}}</p>
 </main>
 <app-footer></app-footer>
