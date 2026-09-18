@@ -2,7 +2,7 @@
     <img class="thumb" [src] = "produto().imageUrl">
     <div class="conteudo">
         <header class="cabecalho">
-            <h3 class="titulo">{{produto().nome}}</h3>
+            <h3 class="titulo">{{produto().nome | truncar:25}}</h3>
 
             @switch (produto().estado) {
                 @case ('novo') {
@@ -17,8 +17,8 @@
             }
         </header>
         
-        <!--<p class="desc">{{produto().descricao}}</p>
-        <div class="linhapreco">
+        <p class="desc">{{produto().descricao | truncar:25:true:"........"}}</p>
+        <!--<div class="linhapreco">
             <span class="preco">{{produto().preco | currency: 'BRL: 'symbol': '1.2-2'}}</span>
 
         <app-quantidade-controle [(contador)]="quantidade"></app-quantidade-controle>
